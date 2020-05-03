@@ -33,7 +33,7 @@ sudo dpkg -i *.deb
 
 ## remover pacotes que eu não gosto
 
-sudo apt auto-remove thunderbird
+sudo apt auto-remove thunderbird -y
 
 
 ## pacotes ppa
