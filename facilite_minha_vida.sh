@@ -10,6 +10,10 @@ sudo apt update -y; sudo apt upgrade -y
 
 ## Download de programas externos ##
 
+mkdir /home/$USER/.themes
+
+mkdir /home/$USER/.icons
+
 mkdir /home/$USER/Downloads/programas
 
 cd /home/$USER/Downloads/programas
@@ -24,15 +28,32 @@ wget -c https://downloads.tuxfamily.org/godotengine/3.1.1/Godot_v3.1.1-stable_x1
 
 sudo dpkg -i *.deb
 
+## destino dos pacotes ##
+
+
+## remover pacotes que eu não gosto
+
+sudo apt auto-remove thunderbird
+
+
+## pacotes ppa
+
+sudo add-apt-repository ppa:lutris-team/lutris -y
+sudo add-apt-repository ppa:diodon-team/stable -y
+
 ## pacotes do repositorio##
 
-sudo apt install gnome-tweak-tool
-sudo apt install wine
-sudo apt install adb
-sudo apt install dart
-sudo apt install snapd
-sudo apt install steam-installer steam-devices steam:i386
-sudo apt install vim
+sudo apt install gnome-tweak-tool -y
+sudo apt install gnome-sushi -y
+sudo apt install wine -y
+sudo apt install adb -y
+sudo apt install dart -y
+sudo apt install snapd -y
+sudo apt install steam-installer steam-devices steam:i386 -y
+sudo apt install vim -y
+sudo apt install gnome-packagekit -y
+sudo apt-get install lutris -y
+sudo apt-get install diodon -y
 
 ## Pacotes snaps ##
 
@@ -43,8 +64,15 @@ sudo snap install spotify
 sudo snap install heimer
 sudo snap install gimp
 sudo snap install discord
-sudo snap install android-studio
+sudo snap install android-studio --classic
 sudo snap install code --classic
+sudo snap install audacity
+sudo snap install mailspring
+
+
+## atualizaćão de prevenćão
+
+sudo apt update -y; sudo apt upgrade -y
 
 ## passos finais ##
 
